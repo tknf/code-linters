@@ -41,7 +41,7 @@
     "react.js"
   ],
   "scripts": {
-    "test": "vitest run",
+    "test": "vitest run -u",
     "test:watch": "vitest"
   },
   "dependencies": {
