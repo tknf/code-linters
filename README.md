@@ -1,10 +1,10 @@
-# @tknf/frontend-linters
+# @tknf-labs/code-linters
 
-TKNF's lint and format tools for TypeScript(or JavaScript) project.
+Lint and format tools for TypeScript(or JavaScript) project.
 
 ## Packages
-- `@tknf/eslint-config-typescript`
-- `@tknf/prettier-config`
+- `@tknf-labs/eslint-config`
+- `@tknf-labs/prettier-config`
 
 ## ESLint
 
@@ -12,26 +12,15 @@ TKNF's lint and format tools for TypeScript(or JavaScript) project.
 
 #### Install package
 ```bash
-$ yarn add -D @tknf/eslint-config-typescript
+$ yarn add -D @tknf-labs/eslint-config
 # or
-$ npm install --save-dev @tknf/eslint-config-typescript
+$ npm install --save-dev @tknf-labs/eslint-config
 ```
-
-#### Dependencies
-- `@typescript-eslint/parser`
-- `@typescript-eslint/eslint-plugin`
-- `eslint`
-- `eslint-config-prettier`
-- `eslint-plugin-import`
-- `eslint-plugin-jest`
-- `eslint-plugin-jsx-a11y`
-- `eslint-plugin-react`
-- `eslint-plugin-react-hooks`
 
 ### Configuration
 ```json:.eslintrc
 {
-  "extends": ["@tknf/eslint-config-typescript"],
+  "extends": ["@tknf-labs/eslint-config/node"],
   "parserOptions": {
     "project": "./tsconfig.json"
   }
@@ -42,14 +31,14 @@ $ npm install --save-dev @tknf/eslint-config-typescript
 
 ### Installation
 ```bash
-$ yarn add -D @tknf/prettier-config`
+$ yarn add -D @tknf-labs/prettier-config`
 # or
-$ npm install --save-dev @tknf/prettier-config
+$ npm install --save-dev @tknf-labs/prettier-config
 ```
 
 ### Configuration
 ```json:package.json
 {
-  "prettier": "@tknf/prettier-config"
+  "prettier": "@tknf-labs/prettier-config"
 }
 ```
