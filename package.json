@@ -1,38 +1,29 @@
 {
-  "name": "frontend-linters",
-  "version": "1.0.2",
+  "name": "@tknf-labs/code-linters",
+  "version": "2.0.0",
   "private": true,
-  "author": "Tasuku Kuribayashi <kuribayashi@tknf.net>",
   "license": "MIT",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "test": "FORCE_COLOR=1 lerna run --stream test",
-    "test:watch": "FORCE_COLOR=1 lerna exec --stream --ignore prettier-config-tknf -- npm run test:watch",
-    "lint": "lerna run lint",
-    "lint:ci": "lerna run lint:ci",
-    "build": "lerna run build",
-    "build:watch": "lerna run --parallel build:watch",
-    "changelog": "yarn --silent lerna-changelog | cat - CHANGELOG.md | yarn --silent prettier --stdin-filepath CHANGELOG.md > CHANGELOG_BACKUP.md; mv CHANGELOG_BACKUP.md CHANGELOG.md",
-    "prerelease": "yarn install --force && yarn run build",
-    "release": "lerna publish --force-publish --preid beta --pre-dist-tag beta",
-    "clean": "yarn lerna clean -y"
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch",
+    "release:changeset": "pnpm changeset",
+    "release:version": "pnpm changeset version",
+    "prerelease": "pnpm install --force && pnpm run test",
+    "release": "pnpm changeset publish"
   },
   "devDependencies": {
-    "@types/eslint": "^8.4.1",
-    "@types/jest": "^27.4.1",
-    "jest": "^27.5.1",
-    "lerna": "^4.0.0",
-    "lerna-changelog": "^2.2.0",
-    "prettier": "^2.5.1",
-    "rimraf": "^3.0.2",
-    "ts-jest": "^27.1.3",
-    "typescript": "^4.5.5"
+    "@changesets/cli": "^2.26.1",
+    "@types/eslint": "^8.40.2",
+    "prettier": "^2.8.8",
+    "rimraf": "^5.0.1",
+    "turbo": "^1.10.4",
+    "typescript": "^5.1.3",
+    "vitest": "^0.32.2"
   },
   "engines": {
-    "npm": ">=7.0.0",
     "node": ">=14.0.0"
-  },
-  "packageManager": "npm@8.1.0"
+  }
 }

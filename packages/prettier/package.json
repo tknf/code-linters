@@ -1,0 +1,38 @@
+{
+  "name": "@tknf-labs/prettier-config",
+  "version": "2.0.0",
+  "private": false,
+  "license": "MIT",
+  "description": "Basic Prettier configuration",
+  "author": "TKNF LLC <dev@tknf.net>",
+  "homepage": "https://github.com/tknf/code-linters#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tknf/code-linters",
+    "directory": "packages/prettier"
+  },
+  "bugs": {
+    "url": "https://github.com/tknf/code-linters/issues"
+  },
+  "contributors": [
+    {
+      "name": "Tasuku Kuribayashi",
+      "email": "kuribayashi@tknf.net"
+    }
+  ],
+  "keywords": [
+    "prettier",
+    "format",
+    "javascript",
+    "typescript"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "@tknf-labs:registry": "https://registry.npmjs.org"
+  },
+  "main": "./index.json",
+  "files": [
+    "README.md",
+    "index.json"
+  ]
+}

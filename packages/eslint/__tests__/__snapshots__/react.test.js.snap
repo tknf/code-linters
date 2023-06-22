@@ -1,0 +1,522 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`eslint-config > should match snapshot > env 1`] = `
+{
+  "browser": true,
+  "commonjs": true,
+  "es6": true,
+  "node": true,
+}
+`;
+
+exports[`eslint-config > should match snapshot > globals 1`] = `{}`;
+
+exports[`eslint-config > should match snapshot > ignorePatterns 1`] = `[]`;
+
+exports[`eslint-config > should match snapshot > noInlineConfig 1`] = `undefined`;
+
+exports[`eslint-config > should match snapshot > parser 1`] = `"/.pnpm/@typescript-eslint+parser@5.60.0_eslint@8.43.0_typescript@5.1.3/"`;
+
+exports[`eslint-config > should match snapshot > parserOptions 1`] = `
+{
+  "babelOptions": {
+    "presets": [
+      "/Users/mast1ff/Repos/tknf/tknf-labs/code-linters/node_modules/.pnpm/@babel+preset-react@7.22.5_@babel+core@7.22.5/node_modules/@babel/preset-react/lib/index.js",
+    ],
+  },
+  "ecmaFeatures": {
+    "jsx": true,
+  },
+  "ecmaVersion": "latest",
+  "requireConfigFile": false,
+  "sourceType": "module",
+  "warnOnUnsupportedTypeScriptVersion": true,
+}
+`;
+
+exports[`eslint-config > should match snapshot > plugins 1`] = `
+[
+  "jsx-a11y",
+  "react-hooks",
+  "react",
+  "import",
+  "@typescript-eslint",
+]
+`;
+
+exports[`eslint-config > should match snapshot > reportUnusedDisableDirectives 1`] = `undefined`;
+
+exports[`eslint-config > should match snapshot > rules 1`] = `
+{
+  "@typescript-eslint/consistent-type-assertions": [
+    1,
+  ],
+  "@typescript-eslint/consistent-type-imports": [
+    1,
+  ],
+  "@typescript-eslint/no-array-constructor": [
+    1,
+  ],
+  "@typescript-eslint/no-redeclare": [
+    2,
+  ],
+  "@typescript-eslint/no-unused-expressions": [
+    1,
+    {
+      "allowShortCircuit": true,
+      "allowTaggedTemplates": true,
+      "allowTernary": true,
+      "enforceForJSX": false,
+    },
+  ],
+  "@typescript-eslint/no-unused-vars": [
+    1,
+    {
+      "args": "none",
+      "ignoreRestSiblings": true,
+    },
+  ],
+  "@typescript-eslint/no-use-before-define": [
+    1,
+    {
+      "classes": false,
+      "functions": false,
+      "typedefs": false,
+      "variables": false,
+    },
+  ],
+  "@typescript-eslint/no-useless-constructor": [
+    1,
+  ],
+  "array-callback-return": [
+    1,
+  ],
+  "getter-return": [
+    1,
+  ],
+  "import/first": [
+    2,
+  ],
+  "import/named": [
+    "off",
+  ],
+  "import/no-amd": [
+    2,
+  ],
+  "import/no-webpack-loader-syntax": [
+    2,
+  ],
+  "import/order": [
+    1,
+  ],
+  "jsx-a11y/alt-text": [
+    1,
+  ],
+  "jsx-a11y/anchor-has-content": [
+    1,
+  ],
+  "jsx-a11y/anchor-is-valid": [
+    1,
+    {
+      "aspects": [
+        "noHref",
+        "invalidHref",
+      ],
+    },
+  ],
+  "jsx-a11y/aria-activedescendant-has-tabindex": [
+    1,
+  ],
+  "jsx-a11y/aria-props": [
+    1,
+  ],
+  "jsx-a11y/aria-proptypes": [
+    1,
+  ],
+  "jsx-a11y/aria-role": [
+    1,
+    {
+      "ignoreNonDOM": true,
+    },
+  ],
+  "jsx-a11y/aria-unsupported-elements": [
+    1,
+  ],
+  "jsx-a11y/iframe-has-title": [
+    1,
+  ],
+  "jsx-a11y/img-redundant-alt": [
+    1,
+  ],
+  "jsx-a11y/lang": [
+    1,
+  ],
+  "jsx-a11y/no-access-key": [
+    1,
+  ],
+  "jsx-a11y/no-redundant-roles": [
+    1,
+  ],
+  "jsx-a11y/role-has-required-aria-props": [
+    1,
+  ],
+  "jsx-a11y/role-supports-aria-props": [
+    1,
+  ],
+  "new-parens": [
+    1,
+  ],
+  "no-array-constructor": [
+    0,
+  ],
+  "no-caller": [
+    2,
+  ],
+  "no-cond-assign": [
+    1,
+    "except-parens",
+  ],
+  "no-const-assign": [
+    2,
+  ],
+  "no-control-regex": [
+    1,
+  ],
+  "no-dupe-args": [
+    1,
+  ],
+  "no-dupe-class-members": [
+    0,
+  ],
+  "no-dupe-keys": [
+    1,
+  ],
+  "no-duplicate-case": [
+    1,
+  ],
+  "no-duplicate-imports": [
+    0,
+  ],
+  "no-empty": [
+    1,
+    {
+      "allowEmptyCatch": true,
+    },
+  ],
+  "no-empty-character-class": [
+    1,
+  ],
+  "no-empty-pattern": [
+    1,
+  ],
+  "no-eval": [
+    2,
+  ],
+  "no-ex-assign": [
+    1,
+  ],
+  "no-extend-native": [
+    1,
+  ],
+  "no-extra-bind": [
+    1,
+  ],
+  "no-extra-boolean-cast": [
+    1,
+  ],
+  "no-extra-label": [
+    1,
+  ],
+  "no-func-assign": [
+    2,
+  ],
+  "no-global-assign": [
+    2,
+  ],
+  "no-implied-eval": [
+    1,
+  ],
+  "no-invalid-regexp": [
+    1,
+  ],
+  "no-label-var": [
+    1,
+  ],
+  "no-labels": [
+    1,
+    {
+      "allowLoop": true,
+      "allowSwitch": false,
+    },
+  ],
+  "no-lone-blocks": [
+    1,
+  ],
+  "no-loop-func": [
+    1,
+  ],
+  "no-mixed-operators": [
+    1,
+    {
+      "allowSamePrecedence": false,
+      "groups": [
+        [
+          "&",
+          "|",
+          "^",
+          "~",
+          "<<",
+          ">>",
+          ">>>",
+        ],
+        [
+          "==",
+          "!=",
+          "===",
+          "!==",
+          ">",
+          ">=",
+          "<",
+          "<=",
+        ],
+        [
+          "&&",
+          "||",
+        ],
+        [
+          "in",
+          "instanceof",
+        ],
+      ],
+    },
+  ],
+  "no-new-func": [
+    1,
+  ],
+  "no-new-object": [
+    1,
+  ],
+  "no-octal": [
+    1,
+  ],
+  "no-redeclare": [
+    0,
+  ],
+  "no-restricted-imports": [
+    1,
+  ],
+  "no-script-url": [
+    1,
+  ],
+  "no-self-assign": [
+    1,
+  ],
+  "no-self-compare": [
+    1,
+  ],
+  "no-sequences": [
+    1,
+  ],
+  "no-shadow-restricted-names": [
+    1,
+  ],
+  "no-sparse-arrays": [
+    1,
+  ],
+  "no-template-curly-in-string": [
+    1,
+  ],
+  "no-this-before-super": [
+    1,
+  ],
+  "no-undef": [
+    0,
+  ],
+  "no-unreachable": [
+    1,
+  ],
+  "no-unsafe-negation": [
+    1,
+  ],
+  "no-unused-expressions": [
+    0,
+    {
+      "allowShortCircuit": true,
+      "allowTaggedTemplates": true,
+      "allowTernary": true,
+      "enforceForJSX": false,
+    },
+  ],
+  "no-unused-labels": [
+    1,
+  ],
+  "no-unused-vars": [
+    0,
+    {
+      "args": "none",
+      "ignoreRestSiblings": true,
+    },
+  ],
+  "no-use-before-define": [
+    0,
+    {
+      "classes": false,
+      "functions": false,
+      "variables": false,
+    },
+  ],
+  "no-useless-computed-key": [
+    1,
+  ],
+  "no-useless-concat": [
+    1,
+  ],
+  "no-useless-constructor": [
+    0,
+  ],
+  "no-useless-escape": [
+    1,
+  ],
+  "no-useless-rename": [
+    1,
+    {
+      "ignoreDestructuring": false,
+      "ignoreExport": false,
+      "ignoreImport": false,
+    },
+  ],
+  "react-hooks/exhaustive-deps": [
+    1,
+  ],
+  "react-hooks/rules-of-hooks": [
+    2,
+  ],
+  "react/display-name": [
+    1,
+  ],
+  "react/forbid-foreign-prop-types": [
+    1,
+    {
+      "allowInPropTypes": true,
+    },
+  ],
+  "react/jsx-key": [
+    1,
+  ],
+  "react/jsx-no-comment-textnodes": [
+    1,
+  ],
+  "react/jsx-no-target-blank": [
+    1,
+  ],
+  "react/jsx-no-undef": [
+    2,
+  ],
+  "react/jsx-pascal-case": [
+    1,
+    {
+      "allowAllCaps": true,
+      "ignore": [],
+    },
+  ],
+  "react/jsx-uses-react": [
+    1,
+  ],
+  "react/jsx-uses-vars": [
+    1,
+  ],
+  "react/no-danger-with-children": [
+    1,
+  ],
+  "react/no-direct-mutation-state": [
+    1,
+  ],
+  "react/no-find-dom-node": [
+    1,
+  ],
+  "react/no-is-mounted": [
+    1,
+  ],
+  "react/no-render-return-value": [
+    2,
+  ],
+  "react/no-string-refs": [
+    1,
+  ],
+  "react/no-typos": [
+    1,
+  ],
+  "react/react-in-jsx-scope": [
+    0,
+  ],
+  "react/require-render-return": [
+    2,
+  ],
+  "react/style-prop-object": [
+    1,
+  ],
+  "require-yield": [
+    1,
+  ],
+  "use-isnan": [
+    1,
+  ],
+  "valid-typeof": [
+    1,
+  ],
+}
+`;
+
+exports[`eslint-config > should match snapshot > settings 1`] = `
+{
+  "import/extensions": [
+    ".ts",
+    ".tsx",
+    ".js",
+    ".jsx",
+  ],
+  "import/external-module-folders": [
+    "node_modules",
+    "node_modules/@types",
+  ],
+  "import/ignore": [
+    "node_modules",
+    "\\\\.(css|md|svg|json)$",
+  ],
+  "import/parsers": {
+    "/Users/mast1ff/Repos/tknf/tknf-labs/code-linters/node_modules/.pnpm/@typescript-eslint+parser@5.60.0_eslint@8.43.0_typescript@5.1.3/node_modules/@typescript-eslint/parser/dist/index.js": [
+      ".ts",
+      ".tsx",
+      ".d.ts",
+    ],
+    "@typescript-eslint/parser": [
+      ".ts",
+      ".tsx",
+    ],
+  },
+  "import/resolver": {
+    "/Users/mast1ff/Repos/tknf/tknf-labs/code-linters/node_modules/.pnpm/eslint-import-resolver-node@0.3.7/node_modules/eslint-import-resolver-node/index.js": {
+      "extensions": [
+        ".js",
+        ".jsx",
+        ".ts",
+        ".tsx",
+      ],
+    },
+    "/Users/mast1ff/Repos/tknf/tknf-labs/code-linters/node_modules/.pnpm/eslint-import-resolver-typescript@3.5.5_@typescript-eslint+parser@5.60.0_eslint-import-resolv_v3xvkagq64o7lye5znws5ok3fi/node_modules/eslint-import-resolver-typescript/lib/index.cjs": {
+      "alwaysTryTypes": true,
+    },
+    "node": {
+      "extensions": [
+        ".ts",
+        ".tsx",
+        ".js",
+        ".jsx",
+      ],
+    },
+  },
+  "react": {
+    "version": "detect",
+  },
+}
+`;

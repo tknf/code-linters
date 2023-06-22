@@ -1,7 +1,4 @@
 repo:
   - "!packages/**/*"
   - "!package.json"
-  - "!yarn.lock"
-
-eslint-config-tknf-typescript:
-  - packages/eslint-config-tknf-typescript/**/*
+  - "!pnpm-lock.yaml"

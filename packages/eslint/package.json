@@ -1,0 +1,85 @@
+{
+  "name": "@tknf-labs/eslint-config",
+  "version": "2.0.0",
+  "private": false,
+  "license": "MIT",
+  "description": "Basic ESLint configuration for JavaScript or TypeScript project.",
+  "author": "TKNF LLC <dev@tknf.net>",
+  "homepage": "https://github.com/tknf/code-linters#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tknf/code-linters",
+    "directory": "packages/eslint"
+  },
+  "bugs": {
+    "url": "https://github.com/tknf/code-linters/issues"
+  },
+  "contributors": [
+    {
+      "name": "Tasuku Kuribayashi",
+      "email": "kuribayashi@tknf.net"
+    }
+  ],
+  "keywords": [
+    "eslint",
+    "lint",
+    "javascript",
+    "typescript"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "@tknf-labs:registry": "https://registry.npmjs.org"
+  },
+  "main": "./node.js",
+  "files": [
+    "README.md",
+    "rules/**/*.js",
+    "settings/**/*.js",
+    "jest-testing-library.js",
+    "jest.js",
+    "node.js",
+    "react.js"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/eslint-parser": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "@rushstack/eslint-patch": "^1.3.2",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint-import-resolver-node": "^0.3.7",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.8.2",
+    "eslint-plugin-jest-dom": "^5.0.1",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-testing-library": "^5.11.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.40.2",
+    "eslint": "^8.37.0",
+    "jest": "^27.5.1",
+    "react": "^18.2.0",
+    "typescript": "^5.1.3"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0",
+    "react": "^17.0.0 || ^18.0.0",
+    "typescript": "^4.0.0 || ^5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
+  }
+}

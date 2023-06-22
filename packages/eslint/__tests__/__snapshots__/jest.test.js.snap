@@ -1,0 +1,30 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`eslint-config > should match snapshot > env 1`] = `
+{
+  "node": true,
+}
+`;
+
+exports[`eslint-config > should match snapshot > globals 1`] = `{}`;
+
+exports[`eslint-config > should match snapshot > ignorePatterns 1`] = `[]`;
+
+exports[`eslint-config > should match snapshot > noInlineConfig 1`] = `undefined`;
+
+exports[`eslint-config > should match snapshot > parser 1`] = `null`;
+
+exports[`eslint-config > should match snapshot > parserOptions 1`] = `{}`;
+
+exports[`eslint-config > should match snapshot > plugins 1`] = `
+[
+  "jest-dom",
+  "jest",
+]
+`;
+
+exports[`eslint-config > should match snapshot > reportUnusedDisableDirectives 1`] = `undefined`;
+
+exports[`eslint-config > should match snapshot > rules 1`] = `{}`;
+
+exports[`eslint-config > should match snapshot > settings 1`] = `{}`;

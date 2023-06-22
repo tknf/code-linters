@@ -1,15 +1,17 @@
-const ESLint = require("eslint").ESLint;
-const baseConfig = require("../index");
+import { describe, test, expect } from "vitest";
 
-const normalizePath = (path) => {
+import { ESLint } from "eslint";
+import baseConfig from "../jest-testing-library";
+
+function normalizePath(path) {
   return /node_modules/.test(path) ? path.split("node_modules")[1] : path;
-};
+}
 
-describe("eslint-config-tknf-typescript", () => {
+describe("eslint-config", () => {
   test("should match snapshot", async () => {
     const config = await new ESLint({
       baseConfig,
-      useEslintrc: false
+      useEslintrc: false,
     }).calculateConfigForFile("test.ts");
     const keys = Object.keys(config);
 
