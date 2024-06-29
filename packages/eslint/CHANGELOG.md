@@ -1,5 +1,11 @@
 # @tknf-labs/eslint-config
 
+## 2.2.0
+
+### Minor Changes
+
+- update dependencies
+
 ## 2.1.1
 
 ### Minor Changes
