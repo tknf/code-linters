@@ -1,6 +1,6 @@
 {
   "name": "@tknf-labs/prettier-config",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "private": false,
   "license": "MIT",
   "description": "Basic Prettier configuration",
