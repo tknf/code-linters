@@ -15,7 +15,7 @@ exports[`eslint-config > should match snapshot > ignorePatterns 1`] = `[]`;
 
 exports[`eslint-config > should match snapshot > noInlineConfig 1`] = `undefined`;
 
-exports[`eslint-config > should match snapshot > parser 1`] = `"/.pnpm/@typescript-eslint+parser@5.60.0_eslint@8.43.0_typescript@5.1.3/"`;
+exports[`eslint-config > should match snapshot > parser 1`] = `"/.pnpm/@typescript-eslint+parser@6.4.0_eslint@8.57.0_typescript@5.1.3/"`;
 
 exports[`eslint-config > should match snapshot > parserOptions 1`] = `
 {
@@ -336,6 +336,8 @@ exports[`eslint-config > should match snapshot > settings 1`] = `
 {
   "import/extensions": [
     ".ts",
+    ".cts",
+    ".mts",
     ".tsx",
     ".js",
     ".jsx",
@@ -346,21 +348,23 @@ exports[`eslint-config > should match snapshot > settings 1`] = `
   ],
   "import/ignore": [
     "node_modules",
-    "\\\\.(css|md|svg|json)$",
+    "\\.(css|md|svg|json)$",
   ],
   "import/parsers": {
-    "/Users/mast1ff/Repos/tknf/tknf-labs/code-linters/node_modules/.pnpm/@typescript-eslint+parser@5.60.0_eslint@8.43.0_typescript@5.1.3/node_modules/@typescript-eslint/parser/dist/index.js": [
+    "/Users/mast1ff/work/tknf/tknf-labs/oss/code-linters/node_modules/.pnpm/@typescript-eslint+parser@6.4.0_eslint@8.57.0_typescript@5.1.3/node_modules/@typescript-eslint/parser/dist/index.js": [
       ".ts",
       ".tsx",
       ".d.ts",
     ],
     "@typescript-eslint/parser": [
       ".ts",
+      ".cts",
+      ".mts",
       ".tsx",
     ],
   },
   "import/resolver": {
-    "/Users/mast1ff/Repos/tknf/tknf-labs/code-linters/node_modules/.pnpm/eslint-import-resolver-node@0.3.7/node_modules/eslint-import-resolver-node/index.js": {
+    "/Users/mast1ff/work/tknf/tknf-labs/oss/code-linters/node_modules/.pnpm/eslint-import-resolver-node@0.3.7/node_modules/eslint-import-resolver-node/index.js": {
       "extensions": [
         ".js",
         ".jsx",
@@ -368,12 +372,14 @@ exports[`eslint-config > should match snapshot > settings 1`] = `
         ".tsx",
       ],
     },
-    "/Users/mast1ff/Repos/tknf/tknf-labs/code-linters/node_modules/.pnpm/eslint-import-resolver-typescript@3.5.5_@typescript-eslint+parser@5.60.0_eslint-import-resolv_v3xvkagq64o7lye5znws5ok3fi/node_modules/eslint-import-resolver-typescript/lib/index.cjs": {
+    "/Users/mast1ff/work/tknf/tknf-labs/oss/code-linters/node_modules/.pnpm/eslint-import-resolver-typescript@3.5.5_@typescript-eslint+parser@6.4.0_eslint@8.57.0_typescr_hjgojzohr3smscx33qjgyvxunu/node_modules/eslint-import-resolver-typescript/lib/index.cjs": {
       "alwaysTryTypes": true,
     },
     "node": {
       "extensions": [
         ".ts",
+        ".cts",
+        ".mts",
         ".tsx",
         ".js",
         ".jsx",
