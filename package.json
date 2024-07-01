@@ -22,7 +22,7 @@
     "prettier": "^2.8.8",
     "rimraf": "^5.0.1",
     "turbo": "^2.0.6",
-    "typescript": "^5.5.2",
+    "typescript": "^5.5.3",
     "vitest": "^1.6.0"
   },
   "engines": {
