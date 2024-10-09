@@ -3,7 +3,6 @@ const eslintJs = require("@eslint/js");
 const configPrettier = require("eslint-config-prettier");
 const pluginESx = require("eslint-plugin-es-x");
 const pluginImport = require("eslint-plugin-import");
-const pluginJest = require("eslint-plugin-jest");
 const pluginJsxA11y = require("eslint-plugin-jsx-a11y");
 const pluginUseMacros = require("eslint-plugin-use-macros");
 const globals = require("globals");
@@ -21,7 +20,6 @@ module.exports = eslintTs.config({
   plugins: {
     import: fixupPluginRules(pluginImport),
     "jsx-a11y": pluginJsxA11y,
-    jest: pluginJest,
     "@typescript-eslint": eslintTs.plugin,
     "use-macros": pluginUseMacros,
     "es-x": pluginESx,
@@ -29,7 +27,6 @@ module.exports = eslintTs.config({
   languageOptions: {
     globals: {
       ...globals.browser,
-      ...pluginJest.environments.globals.globals,
       ...globals.node,
       flushPromises: true,
     },
