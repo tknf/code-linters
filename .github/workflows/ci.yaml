@@ -1,0 +1,29 @@
+name: "CI"
+
+on:
+  pull_request:
+    types:
+      - "opened"
+      - "synchronize"
+      - "reopened"
+      - "closed"
+    paths-ignore:
+      - "**/*.md"
+      - ".vscode/**"
+      - ".github/dependabot.yaml"
+
+jobs:
+  test:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    name: "Test"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./.github/actions/setup
+
+      - name: "Install dependencies"
+        run: pnpm install
+
+      - name: "Test"
+        run: pnpm run test
