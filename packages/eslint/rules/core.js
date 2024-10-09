@@ -1,4 +1,4 @@
-// const OFF = 0;
+const OFF = 0;
 const WARN = 1;
 const ERROR = 2;
 
@@ -41,10 +41,10 @@ module.exports = {
         ["&", "|", "^", "~", "<<", ">>", ">>>"],
         ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
         ["&&", "||"],
-        ["in", "instanceof"]
+        ["in", "instanceof"],
       ],
-      allowSamePrecedence: false
-    }
+      allowSamePrecedence: false,
+    },
   ],
   "no-unsafe-negation": WARN,
   "no-new-func": WARN,
@@ -60,27 +60,27 @@ module.exports = {
   "no-sparse-arrays": WARN,
   "no-template-curly-in-string": WARN,
   "no-this-before-super": WARN,
-  "no-undef": ERROR,
+  "no-undef": OFF,
   "no-unreachable": WARN,
   "no-unused-expressions": [
     WARN,
     {
       allowShortCircuit: true,
       allowTernary: true,
-      allowTaggedTemplates: true
-    }
+      allowTaggedTemplates: true,
+    },
   ],
   "no-unused-labels": WARN,
   "no-unused-vars": [
     WARN,
     {
       args: "none",
-      ignoreRestSiblings: true
-    }
+      ignoreRestSiblings: true,
+    },
   ],
   "no-use-before-define": [
     WARN,
-    { classes: false, functions: false, variables: false }
+    { classes: false, functions: false, variables: false },
   ],
   "no-useless-computed-key": WARN,
   "no-useless-concat": WARN,
@@ -91,10 +91,10 @@ module.exports = {
     {
       ignoreDestructuring: false,
       ignoreImport: false,
-      ignoreExport: false
-    }
+      ignoreExport: false,
+    },
   ],
   "require-yield": WARN,
   "use-isnan": WARN,
-  "valid-typeof": WARN
+  "valid-typeof": WARN,
 };

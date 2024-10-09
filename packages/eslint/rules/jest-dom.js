@@ -14,5 +14,5 @@ module.exports = {
   "jest-dom/prefer-to-have-class": WARN,
   "jest-dom/prefer-to-have-style": WARN,
   "jest-dom/prefer-to-have-text-content": WARN,
-  "jest-dom/prefer-to-have-value": WARN
+  "jest-dom/prefer-to-have-value": WARN,
 };

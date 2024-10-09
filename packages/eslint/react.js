@@ -18,7 +18,7 @@ const config = {
     browser: true,
     commonjs: true,
     es6: true,
-    node: true
+    node: true,
   },
   parser: "@babel/eslint-parser",
   parserOptions: {
@@ -26,19 +26,19 @@ const config = {
     requireConfigFile: false,
     ecmaVersion: "latest",
     babelOptions: {
-      presets: [require.resolve("@babel/preset-react")]
-    }
+      presets: [require.resolve("@babel/preset-react")],
+    },
   },
   plugins: ["import", "react", "react-hooks", "jsx-a11y"],
   settings: {
     ...reactSettings,
-    ...importSettings
+    ...importSettings,
   },
   rules: {
     ...coreRules,
     ...importRules,
     ...reactRules,
-    ...jsxA11yRules
+    ...jsxA11yRules,
   },
   overrides: [
     {
@@ -49,16 +49,16 @@ const config = {
         sourceType: "module",
         ecmaVersion: "latest",
         ecmaFeatures: {
-          jsx: true
+          jsx: true,
         },
-        warnOnUnsupportedTypeScriptVersion: true
+        warnOnUnsupportedTypeScriptVersion: true,
       },
       plugins: ["@typescript-eslint"],
       rules: {
-        ...typescriptRules
-      }
-    }
-  ]
+        ...typescriptRules,
+      },
+    },
+  ],
 };
 
 module.exports = config;

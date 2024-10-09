@@ -22,5 +22,5 @@ module.exports = {
   "testing-library/prefer-screen-queries": WARN,
   "testing-library/prefer-user-event": WARN,
   "testing-library/prefer-wait-for": WARN,
-  "testing-library/render-result-naming-convention": WARN
+  "testing-library/render-result-naming-convention": WARN,
 };

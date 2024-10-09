@@ -30,8 +30,8 @@ module.exports = {
       functions: false,
       classes: false,
       variables: false,
-      typedefs: false
-    }
+      typedefs: false,
+    },
   ],
   "no-unused-expressions": OFF,
   "@typescript-eslint/no-unused-expressions": [
@@ -39,17 +39,17 @@ module.exports = {
     {
       allowShortCircuit: true,
       allowTernary: true,
-      allowTaggedTemplates: true
-    }
+      allowTaggedTemplates: true,
+    },
   ],
   "no-unused-vars": OFF,
   "@typescript-eslint/no-unused-vars": [
     WARN,
     {
       args: "none",
-      ignoreRestSiblings: true
-    }
+      ignoreRestSiblings: true,
+    },
   ],
   "no-useless-constructor": OFF,
-  "@typescript-eslint/no-useless-constructor": WARN
+  "@typescript-eslint/no-useless-constructor": WARN,
 };

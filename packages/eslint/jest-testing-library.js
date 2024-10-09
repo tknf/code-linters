@@ -6,19 +6,19 @@ const testingLibraryRules = require("./rules/testing-library");
 module.exports = {
   plugins: ["jest", "jest-dom", "testing-library"],
   env: {
-    node: true
+    node: true,
   },
   overrides: [
     {
       files: ["**/__tests__/**/*", "**/*.{spec,test}.*"],
       env: {
-        "jest/globals": true
+        "jest/globals": true,
       },
       rules: {
         ...jestRules,
         ...jestDomRules,
-        ...testingLibraryRules
-      }
-    }
-  ]
+        ...testingLibraryRules,
+      },
+    },
+  ],
 };

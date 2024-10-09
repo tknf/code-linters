@@ -11,7 +11,7 @@ describe("eslint-config", () => {
   test("should match snapshot", async () => {
     const config = await new ESLint({
       baseConfig,
-      useEslintrc: false
+      useEslintrc: false,
     }).calculateConfigForFile("test.ts");
     const keys = Object.keys(config);
 
