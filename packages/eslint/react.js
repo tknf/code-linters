@@ -1,64 +1,47 @@
-// @ts-check
+const { fixupPluginRules } = require("@eslint/compat");
+const pluginReact = require("eslint-plugin-react");
+const pluginReactHooks = require("eslint-plugin-react-hooks");
+const eslintTs = require("typescript-eslint");
 
-const coreRules = require("./rules/core");
-const importRules = require("./rules/import");
-const reactRules = require("./rules/react");
-const jsxA11yRules = require("./rules/jsx-a11y");
-const typescriptRules = require("./rules/typescript");
-const importSettings = require("./settings/import");
-const reactSettings = require("./settings/react");
+const baseConfig = require("./base");
 
-// const OFF = 0;
-// const WARN = 1;
-// const ERROR = 2;
-
-/** @type { import("eslint").Linter.Config } */
-const config = {
-  env: {
-    browser: true,
-    commonjs: true,
-    es6: true,
-    node: true,
-  },
-  parser: "@babel/eslint-parser",
-  parserOptions: {
-    sourceType: "module",
-    requireConfigFile: false,
-    ecmaVersion: "latest",
-    babelOptions: {
-      presets: [require.resolve("@babel/preset-react")],
-    },
-  },
-  plugins: ["import", "react", "react-hooks", "jsx-a11y"],
-  settings: {
-    ...reactSettings,
-    ...importSettings,
+/** @type{import('eslint').Linter.Config[]} */
+module.exports = eslintTs.config({
+  name: "@tknf-labs/typescript/react",
+  files: ["**/*.ts", "**/*.tsx"],
+  extends: [...baseConfig, pluginReact.configs.flat.recommended],
+  plugins: {
+    react: pluginReact,
+    "react-hooks": fixupPluginRules(pluginReactHooks),
   },
   rules: {
-    ...coreRules,
-    ...importRules,
-    ...reactRules,
-    ...jsxA11yRules,
-  },
-  overrides: [
-    {
-      files: ["**/*.js?(x)", "**/*.ts?(x)"],
-      extends: ["plugin:import/typescript"],
-      parser: "@typescript-eslint/parser",
-      parserOptions: {
-        sourceType: "module",
-        ecmaVersion: "latest",
-        ecmaFeatures: {
-          jsx: true,
-        },
-        warnOnUnsupportedTypeScriptVersion: true,
-      },
-      plugins: ["@typescript-eslint"],
-      rules: {
-        ...typescriptRules,
-      },
-    },
-  ],
-};
+    // eslint-plugin-react rules
+    "react/forbid-prop-types": "off",
+    "react/jsx-closing-bracket-location": "warn",
+    "react/jsx-filename-extension": ["warn", { extensions: [".jsx", ".tsx"] }],
+    "react/jsx-indent-props": ["warn", 2],
+    "react/jsx-indent": ["warn", 2],
+    "react/jsx-no-bind": ["warn", { allowArrowFunctions: true }],
+    "react/jsx-no-duplicate-props": "error",
+    "react/jsx-no-target-blank": "warn",
+    "react/jsx-uses-react": ["off"],
+    "react/jsx-uses-vars": "error",
+    "react/jsx-wrap-multilines": "warn",
+    "react/no-array-index-key": "error",
+    "react/no-did-update-set-state": "error",
+    "react/no-find-dom-node": "error",
+    "react/no-multi-comp": "off",
+    "react/no-string-refs": "error",
+    "react/no-unused-prop-types": "off",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": ["off"],
+    "react/require-default-props": "off",
 
-module.exports = config;
+    // eslint-plugin-react-hooks rules
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+
+    // eslint-plugin-use-macros rules
+    "use-macros/styled-components": "error",
+  },
+});

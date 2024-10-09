@@ -1,0 +1,5 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`eslint-config > base > should match snapshot for 1`] = `Promise {}`;
+
+exports[`eslint-config > react > should match snapshot for 1`] = `Promise {}`;
